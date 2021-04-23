@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SmartShopping</string>
+    <string name="welcome_fragment">WELCOME</string>
+</resources>

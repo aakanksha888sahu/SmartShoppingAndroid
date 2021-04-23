@@ -1,0 +1,4 @@
+include ':bosch-app-lib'
+include ':boschui'
+include ':app'
+rootProject.name = "SmartShopping"

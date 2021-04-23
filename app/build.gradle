@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        applicationId "com.bosch.smartshopping"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    def lifecycle_version = "2.3.0"
+    def fragment_version = "1.3.1"
+    def koin_version = "2.2.0"
+    def nav_version = "2.3.4"
+
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+
+    // Kotlin
+    implementation "androidx.fragment:fragment-ktx:$fragment_version"
+
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9'
+
+    //Koin dependency injection library
+    implementation "org.koin:koin-android:$koin_version"
+    implementation "org.koin:koin-androidx-viewmodel:$koin_version"
+
+    implementation project(path: ':bosch-app-lib')
+
+    //BDSEvent bus
+    implementation "org.greenrobot:eventbus:3.1.1"
+
+    //navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    //Retrofit for web services requests
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+}
