@@ -1,0 +1,33 @@
+
+Œ
+java:S1319Ç"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(šêª¤ùÿÿÿÿ
+n
+java:S3776¾"RRefactor this method to reduce its Cognitive Complexity from 31 to the 15 allowed.(•éèíüÿÿÿÿ
+i
+java:S3776ñ"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Æ¯ğó
+i
+java:S3776«"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(º°°³
+Q
+java:S2209Ö"5Change this instance-reference to a static reference.(Â‡ª±ùÿÿÿÿ
+n
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ûì’Œøÿÿÿÿ
+a
+java:S1124ë"EReorder the modifiers to comply with the Java Language Specification.(¼‹ï¡ÿÿÿÿÿ
+B
+java:S1168È"+Return an empty collection instead of null.(¥¹ï
+n
+java:S1104¯"RMake header a static final constant or non-public and provide accessors if needed.(¡ÿäµøÿÿÿÿ
+`
+java:S1124("EReorder the modifiers to comply with the Java Language Specification.(Ù§×ùÿÿÿÿ
+Z
+java:S1155—">Use isEmpty() to check whether the collection is empty or not.(¿Ğøúÿÿÿÿ
+K
+java:S1066€"/Merge this if statement with the enclosing one.(¹ÉÆµûÿÿÿÿ
+`
+java:S1124)"EReorder the modifiers to comply with the Java Language Specification.(¸È¸Àøÿÿÿÿ
+L
+java:S2387¢"0"mTitle" is the name of a field in "ViewHolder".(éå½‚ûÿÿÿÿ
+F
+java:S2387¡"/"mView" is the name of a field in "ViewHolder".(¼ğÅ—
+n
+java:S3776†"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Üëïñıÿÿÿÿ
